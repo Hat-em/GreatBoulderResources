@@ -1,0 +1,359 @@
+body{
+	font-family: "industry-bold", sans-serif;
+	font-style: normal;
+	font-weight: 760;
+	margin: 0px;
+}
+nav{
+	position: fixed;
+	top:0;
+	left: 0;
+	padding: 0.8% 0% 0.5% 0%;
+	width: 100%;
+	background-color: rgba(0,49,60,0.9);
+	font-weight: bold;
+	font-size: 1.27vw;
+	display: flex;
+}
+nav ul{
+	display: inline-flex;
+	margin-left: 11.5%;
+	list-style: none;
+	margin-right: 0px;
+}
+nav ul li{
+	margin: 0% 3.5%;
+	float: right;
+	font-size: 1em;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+nav ul li a:hover{
+	text-decoration:underline;
+	color:#d29f13;
+}
+/*dropdown menu:*/
+/*class to contain EACH element that will have a dropdown menu*/
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+/*class assigned to the element itself (which will be hovered)*/
+.drophover{
+  padding: 0px 15px;
+  margin-bottom: 5%;
+  font-size: 1.27vw;
+  border: none;
+}
+/*the div which will be shown after the element hover, and it's placed exactly after the element*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d29f13;
+  width:185%;
+  padding: 0px;
+  margin-top: 25px;
+  margin-left: 6px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/*change whatever you want in it's elements*/
+.dropdown-content a {
+  color: #FFFFFF;
+  padding: 12px 30px 12px 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 1.1vw;
+}
+
+/*hovering an element inside the dropped menu*/
+.dropdown-content a:hover { text-decoration: underline;}
+
+/*change the div that is needed to be shown to block display when the user hovers the element is hovered
+(because the element is in the container div, so the dropdown div appears when you hover the container div*/
+.dropdown-container:hover .dropdown-content {display: block;}
+
+/*changes the container div color (problaly won't appear because it's covered by the dropdown menu)*/
+.dropdown-container:hover .drophover{}
+#logo{
+	margin-left: 8%;
+	display: inline;
+	width: 19%;
+}
+.mySlides {display:none;}
+.sliderimg{
+	width:100%; z-index: 0;
+}
+.slidertext{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+	position: absolute;
+	top: 0%; 
+	height: 38.1vw;
+	background: rgba(0,49,60,0.4);
+}
+.slidertext h1{
+	font-size: 3.2vw;
+	text-transform: uppercase;
+	font-weight: 760;
+	color: #FFFFFF;
+	margin-top: 0%;
+	margin-bottom: 0px;
+}
+.slidertext h2{
+	margin-top: 0px;
+	font-size: 1.5vw;
+	line-height: 2.94vw;
+	text-transform: uppercase;
+	color: #d29f13;
+}
+.slidertext a{
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+	border: 1px solid #d29f13;
+	background-color: rgba(125,125,125, 0);
+	font-size: 1rem;
+	color: #FFFFFF;
+	min-width: 10.27vw;
+	padding: 1.3% 2%;
+	top: 72%;
+	left: 42%;
+	
+	position: absolute;
+}
+.slidertext a:hover{
+	transition: all 0.3s;
+	background-color: #d29f13;
+}
+/*tp contain the cards*/
+.container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(240px, 40fr));
+	grid-gap: 4.1vw;
+	padding: 1.8% 0%;
+	margin-right: 4%;
+	margin-left: 6%;
+	line-height: 1.4;
+}
+.container > div{
+	margin: 0% 2%;
+	padding: 0% 0.2%;
+	background-color: #FFFFFF;
+	color: #73757C; 
+	font-size: 0.9375rem;
+	font-weight: normal;
+}
+.container h2{
+	color: #00313C;
+	margin-top: 0;
+}
+.container span{
+	margin: 1% 0.2%;
+	font-size: 0.71rem;
+	color: #d29f13;
+	font-family: "ProximaNova-Light",sans-serif;
+}
+.container p{
+	margin: 10% 0.2%;
+	margin-top: 2.5%;
+	font-size: 0.98rem;
+	font-family: "ProximaNova-Light",sans-serif;
+}
+.botton{
+	display: block;
+	text-transform: uppercase;
+	font-weight: 760;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid #00313C;
+	color: #00313C;
+	background-color: rgba(0, 0, 0, 0);
+	padding: 1vw;
+	width: 150px;
+}
+.botton:hover{
+	transition: all 0.3s;
+	background-color: #00313C;
+	color: #FFFFFF;
+}
+.sectionn{
+	font-family: "Industry-Bold", sans-serif;
+	font-weight: bold;
+	display: flex;	
+	background-color: #00313C;
+	box-sizing: border-box;
+	height: 148px;
+	padding: 11.5% 12%;
+	margin-top: 0%;
+}
+.sectionn img{
+	align-self: center;
+	margin-bottom: 26%;
+	margin-left: -1%;
+}
+.sectionn p{font-size: 1.875rem; color: #FFFFFF; margin-top: 8%; margin-bottom: 4%;}
+/*The three elements with prices*/
+.elements{
+	display: flex;
+	font-weight: 760;
+	color: #00313C;
+	width: 17.5vw;
+}
+.elements > div{
+	font-family: "Industry-Bold", sans-serif;
+	border:1px solid #00313C;
+	margin: 15% 0% 2%;
+	padding: 5% 2% 2% 3%;
+	width: 5.8vw;
+	height: 6.59%;
+	line-height: 1;
+}
+.elements p{
+	font-family: "Industry-Bold", sans-serif;
+	font-weight: 760;
+	padding: 9% 3.5% 0% 0%;
+	margin-bottom: 4%;
+	font-size: 1.99rem;
+}
+.elements span{
+	font-family: "Industry-Bold", sans-serif;
+	color: #00313C;
+	font-size: 1vw;
+	margin-top: 0%;
+	text-transform: uppercase;
+}
+.price{
+	display: flex;
+}
+.price span{
+	line-height: 1;
+	color: #00313C;
+	font-weight: 799;
+	width: 5.8vw;
+	margin: 2.5% 3% 0% 0.5%; 
+	padding-left: 0;
+	font-size: 0.9vw;
+	text-transform: lowercase;
+}
+.price a{text-decoration: none; color: #00313C;}
+.price a:hover{text-decoration: underline;}
+
+.jumbotron{
+	display: flex;
+	background-color:#ededed;
+	margin-left: -1%;
+	margin-top: 3%;
+	padding-bottom: 3%;
+	font-weight: normal;
+}
+.jumbotron > div{
+	width: 50%;
+	padding: 0% 1%;
+}
+.jumbotron div+a, .jumbotron img{
+	height: 94.49vh;
+	width: 49.45vw;
+}
+.jumbotron h2{
+	margin-top: 15%;
+	color:#d29f13;
+	font-size: 0.937em;
+}
+.jumbotron h1{
+	color:#00313C;
+	font-size: 1.45rem;
+}
+.jumbotron p{
+	color: #73757C;
+	margin-bottom: 4%;
+	font-size: 1rem;
+	line-height: 1.4;
+	width: 98%;
+	font-family: "ProximaNova-Light",sans-serif;
+}
+/*footer*/
+footer{ padding: 0%;}
+.footerr{
+	display: grid;
+	grid-gap: 5%;
+	margin:5%;
+	padding-left:0%;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 4fr));
+	padding-bottom: 15%;
+}
+.footerr > div{
+	margin: 0% 10%; padding: 0%; font-weight: normal; font-size: 1rem;
+}
+.footerr h3{
+	color:#00313C;
+	font-size: 1.1rem;
+	text-transform: uppercase;  margin-bottom: 0%;
+}
+.footerr ul{
+	list-style: none;
+}
+.footerr ul li{margin: 8% 0%; margin-left: 0;}
+.footerr ul li a{text-decoration: none;}
+.sign-up{ 
+	display: grid;
+	width: 120%;
+	grid-gap: 5%;
+	grid-template-columns: 1fr 1fr;
+	margin: 7% 0% 0%;
+	padding: 0;
+}
+.sign-up input{
+	background-color:#ededed;
+	width: 120%;
+	margin: auto;
+	padding: 0.5% 0% 0.5% 0%;
+	margin-right: 10%;
+	border:none;
+	font-weight: bold;
+	height: 3.4vw;
+	text-align: center; 
+}
+#signupbtn{
+	background-color: #00313C; color: #FFFFFF; text-align: center;
+}
+#signupbtn:hover{background-color:#417f85;}
+
+
+ 
+@media screen and (max-width: 924px){
+	.slidertext h1{font-size: 5vh;}
+	.slidertext h2{font-size:2.45vh;}
+	.slidertext a{
+		 margin-left: -4%;
+	}
+	.jumbotron{
+		display: block; margin: 0; padding: 0% 0% 2%;
+	}
+	.jumbotron div+a, .jumbotron img{
+		display: block;	
+		height: 64.49vw;
+		width: 100%;
+		margin: 0; padding: 0;
+	}
+	.jumbotron > div{
+		margin: 0; width: 100%; padding: 0;
+	}
+	.jumbotron h2{
+		padding: 5.5% 2% 0% 2%; width: 90%; margin:0%;
+	}
+	.jumbotron h1{
+		padding: 0% 2% 1% 2%; width: 90%;
+	}
+	.jumbotron p{
+		padding:0% 2%; width: 90%;
+	}
+	.prices{
+		grid-column: 1/3;
+	}
+}
